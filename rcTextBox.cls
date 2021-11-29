@@ -12,15 +12,13 @@ Desenvolvido em Excel VBA _
 por: Ricardo Camisa _
 Email: rich.7.2014@gmail.com _
 Telefone: +244 925341780 _
-Inscreva-se no meu canal e deia uma força aí. _
+Inscreva-se no meu canal e deia uma forÃ§a aÃ­. _
 link: https://www.youtube.com/c/ricardocamisa _
 *************************************************************************************************************************************************************************************************************************
 
 Public Form                 As MSForms.UserForm
 Public WithEvents TextBox   As MSForms.TextBox
-Attribute TextBox.VB_VarHelpID = -1
 Public WithEvents barBottom As MSForms.Label
-Attribute barBottom.VB_VarHelpID = -1
 Public WithEvents barTitle  As MSForms.Label
 Public CnvNumber            As Long
 Public CnvString            As String
