@@ -1,4 +1,4 @@
-VERSION 1.3.0 CLASS
+VERSION 1.3.1 CLASS
 BEGIN
   MultiUse = -1  'True
 END
@@ -13,8 +13,7 @@ por: Ricardo Camisa _
 Email rich0.7.2014@gmail.com _
 Telefone:  +244 925341780 _
 Inscreva-se no meu canal e deia uma força aí. _
-link https : //www.youtube.com/c/ricardocamisa _
-versão 1.3.0 _
+link https  //www.youtube.com/c/ricardocamisa _
 *************************************************************************************************************************************************************************************************************************
 Public WithEvents Form As MSForms.UserForm
 Public WithEvents Frame As MSForms.Frame
@@ -22,6 +21,7 @@ Public WithEvents TextBox As MSForms.TextBox
 Public WithEvents ComboBox As MSForms.ComboBox
 Public WithEvents barBottom As MSForms.Label
 Public WithEvents barTitle As MSForms.Label
+Public WithEvents DropArrow As MSForms.Label
 Public CnvNumber As Long
 Public CnvString As String
 
@@ -129,6 +129,25 @@ Public Sub AddRcTextBox(MyForm As Object)
                             .Width = Control.Width - 8
                             .Top = Control.Top + Control.Height
                         End With
+                        
+                        Set DropArrow = Form.Controls(nameCtrl).Add("Forms.Label.1", Control.Name & "DropArrow")
+                        With DropArrow
+                            .Font.Name = "Webdings"
+                            .Caption = "6"
+                            .Height = Control.Height
+                            .Width = .Height
+                            .Left = (Control.Width + Control.Left) - .Width + 6
+                            .BackStyle = fmBackStyleTransparent
+                            .ForeColor = RGB(102, 102, 102)
+                            .BorderStyle = fmBorderStyleNone
+                            .Top = Control.Top + 1.5
+                            .Enabled = False
+                            .Font.Size = 10
+                        End With
+                        Set rcTextBox = New rcTextBox
+                        Set rcTextBox.DropArrow = DropArrow
+                        ColTextBox.Add rcTextBox
+
 
                 End Select
 
