@@ -10,7 +10,7 @@ Attribute VB_Exposed = False
 '******************************************************************************************************************************************************************************************************************** _
 Desenvolvido em Excel VBA _
 por: Ricardo Camisa _
-Email rich0.7.2014@gmail.com _
+Email rich.7.2014@gmail.com _
 Telefone:  +244 925341780 _
 Inscreva-se no meu canal e deia uma força aí. _
 link https  //www.youtube.com/c/ricardocamisa _
