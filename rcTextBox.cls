@@ -7,6 +7,7 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = False
+Option Explicit
 '******************************************************************************************************************************************************************************************************************** _
 Desenvolvido em Excel VBA _
 por: Ricardo Camisa _
@@ -24,6 +25,7 @@ Public WithEvents barTitle As MSForms.Label
 Public WithEvents DropArrow As MSForms.Label
 Public CnvNumber As Long
 Public CnvString As String
+Dim rcTextBox As rcTextBox
 
 
 Public Sub AddRcTextBox(MyForm As Object)
@@ -179,9 +181,9 @@ Private Sub ComboBox_Change()
             End If
         Next
 
-        Form.Controls(ComboBox.Name & "barBottom").BackColor = RGB(4, 0, 247)
+        Form.Controls(ComboBox.Name & "barBottom").BackColor = RGB(54, 0, 108)
         With Form.Controls(ComboBox.Name & "barTitle")
-            .ForeColor = RGB(4, 0, 247)
+            .ForeColor = RGB(54, 0, 108)
             .Top = ComboBox.Top - 15
             .Enabled = True
         End With
@@ -197,9 +199,9 @@ Private Sub ComboBox_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, 
         End If
     Next
 
-    Form.Controls(ComboBox.Name & "barBottom").BackColor = RGB(4, 0, 247)
+    Form.Controls(ComboBox.Name & "barBottom").BackColor = RGB(54, 0, 108)
     With Form.Controls(ComboBox.Name & "barTitle")
-        .ForeColor = RGB(4, 0, 247)
+        .ForeColor = RGB(54, 0, 108)
         .Top = ComboBox.Top - 15
         .Enabled = True
     End With
@@ -225,6 +227,7 @@ End Sub
 
 Private Sub TextBox_Change()
     Dim lbl As Control
+    Dim namelbl As String
 
     If TextBox.Value = "" Then
         For Each lbl In Form.Controls(nameCtrl).Controls
@@ -246,9 +249,9 @@ Private Sub TextBox_Change()
             End If
         Next
 
-        Form.Controls(TextBox.Name & "barBottom").BackColor = RGB(4, 0, 247)
+        Form.Controls(TextBox.Name & "barBottom").BackColor = RGB(54, 0, 108)
         With Form.Controls(TextBox.Name & "barTitle")
-            .ForeColor = RGB(4, 0, 247)
+            .ForeColor = RGB(54, 0, 108)
             .Top = TextBox.Top - 15
             .Enabled = True
         End With
@@ -258,6 +261,7 @@ End Sub
 
 Private Sub TextBox_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
     Dim lbl As Control
+    Dim namelbl As String
 
     For Each lbl In Form.Controls(nameCtrl).Controls
         If TypeName(lbl) = "Label" And lbl.Name = TextBox.Name & "barBottom" Then
@@ -265,13 +269,12 @@ Private Sub TextBox_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, B
         End If
     Next
 
-    Form.Controls(TextBox.Name & "barBottom").BackColor = RGB(4, 0, 247)
+    Form.Controls(TextBox.Name & "barBottom").BackColor = RGB(54, 0, 108)
     With Form.Controls(TextBox.Name & "barTitle")
-        .ForeColor = RGB(4, 0, 247)
+        .ForeColor = RGB(54, 0, 108)
         .Top = TextBox.Top - 15
         .Enabled = True
     End With
 
 End Sub
-
 
