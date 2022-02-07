@@ -138,11 +138,11 @@ Public Sub AddRcTextBox(MyForm As Object)
                             .Caption = "6"
                             .Height = Control.Height
                             .Width = .Height
-                            .Left = (Control.Width + Control.Left) - .Width + 6
+                            .Left = (Control.Width + Control.Left) - .Width + 14
                             .BackStyle = fmBackStyleTransparent
                             .ForeColor = RGB(102, 102, 102)
                             .BorderStyle = fmBorderStyleNone
-                            .Top = Control.Top + 1.5
+                            .Top = Control.Top + 5
                             .Enabled = False
                             .Font.Size = 10
                         End With
@@ -192,7 +192,8 @@ End Sub
 
 Private Sub ComboBox_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
     Dim lbl As Control
-
+    Dim namelbl As String
+    
     For Each lbl In Form.Controls(nameCtrl).Controls
         If TypeName(lbl) = "Label" And lbl.Name = ComboBox.Name & "barBottom" Then
             namelbl = lbl.Name
@@ -277,4 +278,5 @@ Private Sub TextBox_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, B
     End With
 
 End Sub
+
 
