@@ -27,6 +27,9 @@ Baixe a classe<br/>
     <img alt="Readme" title="Readme" src="./Animation.gif">
 </h1>
 
+# Meu Canal
+<a href="https://www.youtube.com/watch?v=E5AH_KxxRaU">Video demo</a>
+
 ### Features
 
 - [x] Criar efeito MouseMove e Resetar campos vazios
