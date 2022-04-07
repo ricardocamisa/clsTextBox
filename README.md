@@ -29,7 +29,7 @@ Baixe a classe<br/>
 
 # Meu Canal
 * <a href="https://www.youtube.com/watch?v=E5AH_KxxRaU">1º Video demostrativo</a>
-* <a href="https://www.youtube.com/watch?v=LUllYymVNBk">2ç Video demostrativo</a>
+* <a href="https://www.youtube.com/watch?v=LUllYymVNBk">2º Video demostrativo</a>
 
 ### Features
 
