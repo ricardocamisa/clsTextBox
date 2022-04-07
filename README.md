@@ -23,6 +23,12 @@ Baixe a classe<br/>
 <p>Importe a classe para dentro do seu projeto VBE</p>
 <p>3º Passo</p><br/>
 <p>Declarar uma variável e instanciando-a deste jeito</p>
+<p>
+    Dim Rc as New rcTextBox
+
+    call Rc.Add(Me)
+    
+</p>
 
 ### Features
 
@@ -32,7 +38,6 @@ Baixe a classe<br/>
 - [x] Permitir a funcionalidade direitamente do formulário
 - [] Trabalhar o evento Exit_Sub do campo
 - [] Permitir personalizar as cores
-
 
 
 
