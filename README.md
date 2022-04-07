@@ -40,5 +40,5 @@ Baixe a classe<br/>
 - [] Trabalhar o evento Exit_Sub do campo
 - [] Permitir personalizar as cores
 
-
+Made with 🤩 by RICARDO CAMISA [Ver meu LinkedIn](https://www.linkedin.com/in/ricardo-camisa-6058031a2/)
 
