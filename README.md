@@ -1,6 +1,6 @@
 # README
 
-<h1 align="center">Classe de Estilização de Formulário VBA</h1>
+<h1 align="center" color="blue">Classe de Estilização de Formulário VBA</h1>
 
 <h5>Olá, espero que esteja tudo bem com você.</h5>
 
@@ -10,3 +10,5 @@
 
 * [Versão 1.0](#Sobre)
 * [Versão 1.2.5](#Versao)
+* [Versão beta](#versaobeta)
+
