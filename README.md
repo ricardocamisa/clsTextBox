@@ -17,17 +17,13 @@ Além de lhe economizar o tempo com os desenho, esta classe aumenta bastante a p
 
 <h2>Como configurar?</h2>
 
-<p align«"center">
-    <a href="#Primeiro Passo">1º Passo</a>
-    <a href="#Segundo Passo">2º Passo</a>   
-</p>
+<p>1º Passo</p>
+Baixe a classe
 
 
-# Primeiro Passo
-<p>
-    Baixe a classe
-</p>
+<p>2º Passo</p>
+Importe a classe para dentro do seu projeto VBE
+Para qualquer dúvida assista ao video * [Clique aqui](https://www.youtube.com/watch?v=E5AH_KxxRaU)
 
 
-# Segundo Passo
 
