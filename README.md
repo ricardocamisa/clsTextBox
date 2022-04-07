@@ -17,10 +17,8 @@ Além de lhe economizar o tempo com os desenho, esta classe aumenta bastante a p
 
 # Como configurar?
 
-<p>1º Passo</p>
+<h2>1º Passo</h2>
 Baixe a classe
-
-
 <p>2º Passo</p>
 <p>Importe a classe para dentro do seu projeto VBE</p>
 <p>Para qualquer dúvida assista ao video </p>
