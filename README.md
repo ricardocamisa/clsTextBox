@@ -18,11 +18,21 @@ Além de lhe economizar o tempo com os desenho, esta classe aumenta bastante a p
 # Como configurar?
 
 <h2>1º Passo</h2>
-Baixe a classe
+Baixe a classe<br/>
 <p>2º Passo</p>
 <p>Importe a classe para dentro do seu projeto VBE</p>
-<p>Para qualquer dúvida assista ao video </p>
-* [Clique aqui](https://www.youtube.com/watch?v=E5AH_KxxRaU)
+<p>3º Passo</p><br/>
+<p>Declarar uma variável e instanciando-a deste jeito</p>
+
+### Features
+
+- [x] Criar efeito MouseMove e Resetar campos vazios
+- [x] Subir o título ao digitar no campo 
+- [x] Subir o título ao clicar no campo
+- [x] Permitir a funcionalidade direitamente do formulário
+- [] Trabalhar o evento Exit_Sub do campo
+- [] Permitir personalizar as cores
+
 
 
 
