@@ -15,16 +15,16 @@ Além de lhe economizar o tempo com os desenho, esta classe aumenta bastante a p
 * [Versão 1.2.5](#Versao)
 * [Versão beta](#versaobeta)
 
-<h2>Como configurar?</h2>
+# Como configurar?
 
 <p>1º Passo</p>
 Baixe a classe
 
 
 <p>2º Passo</p>
-Importe a classe para dentro do seu projeto VBE
-Para qualquer dúvida assista ao video 
-* [Clique aqui](#https://www.youtube.com/watch?v=E5AH_KxxRaU)
+<p>Importe a classe para dentro do seu projeto VBE</p>
+<p>Para qualquer dúvida assista ao video </p>
+* [Clique aqui](https://www.youtube.com/watch?v=E5AH_KxxRaU)
 
 
 
