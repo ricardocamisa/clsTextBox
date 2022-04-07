@@ -23,12 +23,9 @@ Baixe a classe<br/>
 <p>Importe a classe para dentro do seu projeto VBE</p>
 <p>3º Passo</p><br/>
 <p>Declarar uma variável e instanciando-a deste jeito</p>
-<p>
-    Dim Rc as New rcTextBox
-
-    call Rc.Add(Me)
-    
-</p>
+<h1 align="center">
+    <img alt="Readme" title="Readme" src="./Animation.gif">
+</h1>
 
 ### Features
 
