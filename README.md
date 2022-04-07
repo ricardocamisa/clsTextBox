@@ -23,7 +23,8 @@ Baixe a classe
 
 <p>2º Passo</p>
 Importe a classe para dentro do seu projeto VBE
-Para qualquer dúvida assista ao video * [Clique aqui](https://www.youtube.com/watch?v=E5AH_KxxRaU)
+Para qualquer dúvida assista ao video 
+* [Clique aqui](#https://www.youtube.com/watch?v=E5AH_KxxRaU)
 
 
 
