@@ -13,7 +13,7 @@ Além de lhe economizar o tempo com os desenho, esta classe aumenta bastante a p
 
 * [Versão 1.0](#Sobre)
 * [Versão 1.2.5](#Versao)
-* [Versão 1.3.1](https://www.linkedin.com/in/ricardo-camisa-6058031a2/)
+* [Versão 1.3.1](https://github.com/ricardocamisa/rcTextBox/raw/main/ClsTextBox%20Vers%C3%A3o%201.4.5.xlsm)
 * [Versão beta](#versaobeta)
 
 # Como configurar?
