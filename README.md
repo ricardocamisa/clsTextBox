@@ -13,7 +13,7 @@ Além de lhe economizar o tempo com os desenho, esta classe aumenta bastante a p
 
 * [Versão 1.0](#Sobre)
 * [Versão 1.2.5](#Versao)
-* [Versão 1.3.1](<a href="https://www.youtube.com/watch?v=E5AH_KxxRaU">)
+* [Versão 1.3.1](https://www.linkedin.com/in/ricardo-camisa-6058031a2/)
 * [Versão beta](#versaobeta)
 
 # Como configurar?
