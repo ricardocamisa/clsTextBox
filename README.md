@@ -11,9 +11,9 @@ Além de lhe economizar o tempo com os desenho, esta classe aumenta bastante a p
 
 # Evolução do Projeto
 
-* [Versão 1.0](#Sobre)
-* [Versão 1.2.5]((https://raw.githubusercontent.com/ricardocamisa/rcTextBox/main/ClsTextBox%20Version%201.4.6.zip))
-* [Versão beta](#versaobeta)
+* [Versão 1.0]((#Sobre))
+* [Versão 1.4.6](https://raw.githubusercontent.com/ricardocamisa/rcTextBox/main/ClsTextBox%20Version%201.4.6.zip)
+* [Versão beta]((#versaobeta))
 
 
 # Como configurar?
