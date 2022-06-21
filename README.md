@@ -18,8 +18,8 @@ Além de lhe economizar o tempo com os desenho, esta classe aumenta bastante a p
 
 # Como configurar?
 
-<h2>1º Passo</h2>
-O Arquivo Zip e extraia os dois módulos<br/>
+<p>1º Passo</p>
+Baixe o arquivo Zip e extraia os dois módulos<br/>
 <p>2º Passo</p>
 <p>Importe a classe para dentro do seu projeto VBE</p>
 <p>3º Passo</p><br/>
