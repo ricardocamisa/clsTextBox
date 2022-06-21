@@ -13,33 +13,29 @@ Além de lhe economizar o tempo com os desenho, esta classe aumenta bastante a p
 
 * [Versão 1.0](#Sobre)
 * [Versão 1.2.5](#Versao)
-* [Versão 1.3.1](https://github.com/ricardocamisa/rcTextBox/raw/main/ClsTextBox%20Vers%C3%A3o%201.4.5.xlsm)
 * [Versão beta](#versaobeta)
+
 
 # Como configurar?
 
 <h2>1º Passo</h2>
-Baixe a classe<br/>
+O Arquivo Zip e extraia os dois módulos<br/>
 <p>2º Passo</p>
 <p>Importe a classe para dentro do seu projeto VBE</p>
 <p>3º Passo</p><br/>
-<p>Declarar uma variável e instanciando-a deste jeito</p>
+<p>No evento UserForm_Initialize() invoque este código, "Call cBox.clasBox(Me)", isto funciona para todos os formulários que desejares utilizar no seu projeto.</p>
 <h1 align="center">
     <img alt="Readme" title="Readme" src="./Animation.gif">
 </h1>
-
-# Meu Canal
-* <a href="https://www.youtube.com/watch?v=E5AH_KxxRaU">1º Video demostrativo</a>
-* <a href="https://www.youtube.com/watch?v=LUllYymVNBk">2º Video demostrativo</a>
 
 ### Features
 
 - [x] Criar efeito MouseMove e Resetar campos vazios
 - [x] Subir o título ao digitar no campo 
 - [x] Subir o título ao clicar no campo
-- [x] Permitir a funcionalidade direitamente do formulário
-- [] Trabalhar o evento Exit_Sub do campo
-- [] Permitir personalizar as cores
+- [x] Permitir funcionalidade diretamente do formulário
+- [x] Trabalhar o evento Exit_Sub do campo
+- [x] Permitir personalizar as cores
 
-Made with 🤩 by RICARDO CAMISA [Ver meu LinkedIn](https://www.linkedin.com/in/ricardo-camisa-6058031a2/)
+
 
