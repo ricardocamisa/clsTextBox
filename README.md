@@ -1,6 +1,6 @@
-# README
+# VBA TextBox Styling
 
-<h1 style={align: "center", color: "blue"}>Classe de Estilização de Formulário VBA</h1>
+It is very simple to implement this class in your project
 
 <h5>Olá, espero que esteja tudo bem com você.</h5>
 
