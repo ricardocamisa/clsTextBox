@@ -2,7 +2,7 @@
 
 It is very simple to implement this class in your project
 
-<a href="https://tukeya.herokuapp.com" target="_blank"><img src="https://miro.medium.com/max/700/0*KvBjxdkU_J5IXgXI" alt="TextBox" style="height: 250px !important;width: 217px !important;" ></a>
+<a href="https://tukeya.herokuapp.com" target="_blank"><img src="https://miro.medium.com/max/700/0*KvBjxdkU_J5IXgXI" alt="TextBox" style="height: 250px !important;width: 450px !important;" ></a>
 
 # Sobre
 <p>Neste Projeto desejo trazer uma ferramenta de desenvolvimento e estilização de seus formulário VBA. <br />
