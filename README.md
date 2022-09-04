@@ -9,4 +9,13 @@ It is very simple to implement this class in your project
 
 Here is a basic template, simply add this to a userform.
 
+```vb
+Public cBox as clsTextBox
+
+Private Sub UserForm_Activate()
+    Set cBox = New clsTextBox
+    cBox.AddEventListenerAll Me
+End Sub
+```
+
 
