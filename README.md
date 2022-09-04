@@ -12,10 +12,12 @@ Here is a basic template, simply add this to a userform.
 ```vb
 Public cBox as clsTextBox
 
-Private Sub UserForm_Activate()
+Private Sub UserForm_Initialize()
     Set cBox = New clsTextBox
     cBox.AddEventListenerAll Me
 End Sub
 ```
+
+
 
 
