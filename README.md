@@ -46,10 +46,13 @@ End Sub
 
 You can also use the RGB format to customize colors.
 
-## ADD MouseIcon on your Forms
+## MouseMove Icon on your Forms
 
 You can also include ico by hovering over the buttons with one of the `Tag`, `Name`, or `ControlTipText` properties as follows: `btn` for example: `btnSave`
 
+## Customize password fields
+
+Add the password style to your textbox, just include the word password in the Name property of the textbox. For example: `txtPassword` or password.
 ## License
 
 MIT License
