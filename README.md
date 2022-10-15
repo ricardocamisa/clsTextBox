@@ -48,7 +48,7 @@ You can also use the RGB format to customize colors.
 
 ## ADD MouseIcon on your Forms
 
-You can also include ico by hovering over the buttons with one of the Tag, Name, or ControlTipText properties as follows: btn
+You can also include ico by hovering over the buttons with one of the `Tag`, `Name`, or `ControlTipText` properties as follows: `btn` example: 
 
 ## License
 
