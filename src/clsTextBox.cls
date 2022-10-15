@@ -1,12 +1,3 @@
-VERSION 1.0 CLASS
-BEGIN
-  MultiUse = -1  'True
-END
-Attribute VB_Name = "clsTextBox"
-Attribute VB_GlobalNameSpace = False
-Attribute VB_Creatable = False
-Attribute VB_PredeclaredId = False
-Attribute VB_Exposed = False
 ' // include api's
 #If VBA7 And Win64 Then
     ' // 64bit
@@ -60,7 +51,7 @@ Private Function Maozinha()
     Call MouseCursor(IDC_HAND)
 End Function
 
-'adaptação Organic Sheets
+'adaptaÃ§Ã£o Organic Sheets
 Public Sub SetInvisibleAll()
     On Error Resume Next
     For Each ctrl In myForm.Controls
