@@ -41,6 +41,8 @@ End Sub
 - Second color: When TextBox Enter
 - Third color: Title and bottom line Color
 - Fourth color: Background Color
+- Fifth: Font Size
+- Sixth: Font Family
 
 You can also use the RGB format to customize colors.
 
