@@ -27,11 +27,11 @@ Private Sub UserForm_Initialize()
 End Sub
 ```
 
-Opcionally you can add the colors to the background, text color before clicking, text color when entering the text box, following the next example:
+Opcionally you can add the colors to the background, text color before clicking, text color when entering the text, font size end font family, following the next example:
 
 ```VBA
 Private Sub UserForm_Initialize()
-    SetClassTextBox Me, 1512210, 14854934, 10395294, 16447476
+    SetClassTextBox Me, 1512210, 14854934, 10395294, 16447476, 10, "MontSerrat"
 End Sub
 ```
 
@@ -45,6 +45,10 @@ End Sub
 - Sixth: Font Family
 
 You can also use the RGB format to customize colors.
+
+## ADD MouseIcon on your Forms
+
+You can also include ico by hovering over the buttons with one of the Tag, Name, or ControlTipText properties as follows: btn
 
 ## License
 
