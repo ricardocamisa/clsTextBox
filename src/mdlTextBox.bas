@@ -1,9 +1,9 @@
-Attribute VB_Name = "mdlTextBox"
 Public FontSize As Integer
 Public FontName As String
 Public fColor, eColor, tColor, bColor
 Public cBox     As clsTextBox
 Public ctBox    As New Collection
+public ctrl     as Control
 Public Sub SetClassTextBox(Form As MSForms.UserForm, _
                         Optional fColorValue As String = 1512210, _
                         Optional eColorValue As String = 14854934, _
