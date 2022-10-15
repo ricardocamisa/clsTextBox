@@ -8,7 +8,7 @@ Multiple forms are tracked simultaneously. Just call the `SetClassTextBox` for e
 
 Just import the following 2 code modules in your VBA Project:
 
-- [**mdlTextBox.bas**](https://github.com/ricardocamisa/blob/master/src/mdlTextBox.bas)
+- [**mdlTextBox.bas**](https://github.com/ricardocamisa/clsTextBox/blob/main/src/mdlTextBox.bas)
 - [**clsTextBox.cls**](https://github.com/ricardocamisa/clsTextBox/blob/main/src/clsTextBox.cls)
 
 ## Usage
