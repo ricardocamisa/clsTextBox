@@ -38,8 +38,16 @@ Public WithEvents barIcon As MSForms.Label
 Attribute barIcon.VB_VarHelpID = -1
 Public WithEvents DropArrow As MSForms.Label
 Attribute DropArrow.VB_VarHelpID = -1
+Public WithEvents btnLabel As MSForms.Label
+Attribute btnLabel.VB_VarHelpID = -1
+Public WithEvents btnCommandButton As MSForms.CommandButton
+Attribute btnCommandButton.VB_VarHelpID = -1
+Public WithEvents btnImage As MSForms.Image
+Attribute btnImage.VB_VarHelpID = -1
+
 
 Public ctBox        As New Collection
+Private This        As clsTextBox
 Private Const IDC_HAND = 32649&
 
 Private Function MouseCursor(CursorType As Long)
@@ -66,7 +74,7 @@ Public Sub SetInvisibleAll()
     Next ctrl
 End Sub
 
-Public Sub clasBox(Form As MSForms.UserForm)
+Public Sub Init(Form As MSForms.UserForm)
     
     Dim ctrl        As control
     Set myForm = Form
@@ -92,10 +100,10 @@ Public Sub clasBox(Form As MSForms.UserForm)
                 
             End With
             
-            Set txt = New clsTextBox
-            Set txt.Textbox = ctrl
-            Set txt.myForm = myForm
-            ctBox.Add txt
+            Set This = New clsTextBox
+            Set This.Textbox = ctrl
+            Set This.myForm = myForm
+            ctBox.Add This
             
         ElseIf TypeName(ctrl) = "ComboBox" And ctrl.Visible = True Then
             With ctrl
@@ -120,25 +128,41 @@ Public Sub clasBox(Form As MSForms.UserForm)
                 
             End With
             
-            Set txt = New clsTextBox
-            Set txt.ComboBox = ctrl
-            Set txt.DropArrow = DropArrow
-            Set txt.myForm = myForm
-            ctBox.Add txt
+            Set This = New clsTextBox
+            Set This.ComboBox = ctrl
+            Set This.DropArrow = DropArrow
+            Set This.myForm = myForm
+            ctBox.Add This
             
         ElseIf TypeName(ctrl) = "MultiPage" Then
-            Set txt = New clsTextBox
-            Set txt.mPage = ctrl
-            Set txt.myForm = myForm
-            ctBox.Add txt
+            Set This = New clsTextBox
+            Set This.mPage = ctrl
+            Set This.myForm = myForm
+            ctBox.Add This
             
         ElseIf TypeName(ctrl) = "Frame" Then
-            Set txt = New clsTextBox
-            Set txt.mFrame = ctrl
-            Set txt.myForm = myForm
-            ctBox.Add txt
+            Set This = New clsTextBox
+            Set This.mFrame = ctrl
+            Set This.myForm = myForm
+            ctBox.Add This
         End If
         
+        If (ctrl.Name Like "*btn*" Or ctrl.Tag Like "*btn*" Or ctrl.ControlTipText Like "*btn*") Then
+            Select Case TypeName(ctrl)
+                Case Is = "CommandButton"
+                    Set This = New clsTextBox
+                    Set This.btnCommandButton = ctrl
+                    ctBox.Add This
+                Case Is = "Image"
+                    Set This = New clsTextBox
+                    Set This.btnImage = ctrl
+                    ctBox.Add This
+                Case Is = "Label"
+                    Set This = New clsTextBox
+                    Set This.btnLabel = ctrl
+                    ctBox.Add This
+            End Select
+        End If
         
     Next ctrl
     SetInvisibleAll
@@ -208,7 +232,6 @@ Sub AddBackGround(ctrl As control)
         .Width = ctrl.Width
         .BackColor = bColor
         .Font.Size = FontSize
-        '        .BackStyle = fmBackStyleTransparent
         .Top = ctrl.Top - 4
         .Left = ctrl.Left
         .ZOrder (1)
@@ -247,10 +270,11 @@ Sub AddDropArrow(ctrl As control)
 End Sub
 
 Sub SetForm(Form As MSForms.UserForm)
-    Set txt = New clsTextBox
-    Set txt.myForm = Form
-    ctBox.Add txt
+    Set This = New clsTextBox
+    Set This.myForm = Form
+    ctBox.Add This
 End Sub
+
 Private Sub mFrame_Click()
     BoxExit
 End Sub
@@ -259,21 +283,21 @@ Private Sub mPage_Click(ByVal Index As Long)
     BoxExit
 End Sub
 
-Private Sub mPage_MouseDown(ByVal Index As Long, ByVal Button As Integer, ByVal Shift As Integer, ByVal x As Single, ByVal y As Single)
+Private Sub mPage_MouseDown(ByVal Index As Long, ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
     BoxExit
 End Sub
 
 Private Sub TextBox_Change()
     TextBoxEnter
 End Sub
-Private Sub Textbox_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, ByVal x As Single, ByVal y As Single)
+Private Sub Textbox_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
     TextBoxEnter
 End Sub
 Private Sub Textbox_KeyUp(ByVal KeyCode As MSForms.ReturnInteger, ByVal Shift As Integer)
     TextBoxEnter
 End Sub
 
-Private Sub txtCaption_Click()
+Private Sub ThisCaption_Click()
     BoxExit
 End Sub
 Sub TextBoxEnter()
@@ -391,7 +415,7 @@ Private Sub ComboBox_KeyUp(ByVal KeyCode As MSForms.ReturnInteger, ByVal Shift A
     ComboBoxEnter
 End Sub
 
-Private Sub ComboBox_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, ByVal x As Single, ByVal y As Single)
+Private Sub ComboBox_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
     ComboBoxEnter
 End Sub
 
@@ -425,7 +449,18 @@ Private Sub DropArrow_Click()
     Next ctrl
 End Sub
 
-Private Sub DropArrow_MouseMove(ByVal Button As Integer, ByVal Shift As Integer, ByVal x As Single, ByVal y As Single)
+Private Sub btnCommandButton_MouseMove(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
+    Maozinha
+End Sub
+
+Private Sub btnImage_MouseMove(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
+    Maozinha
+End Sub
+
+Private Sub btnLabel_MouseMove(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
+    Maozinha
+End Sub
+Private Sub DropArrow_MouseMove(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
     Maozinha
 End Sub
 
